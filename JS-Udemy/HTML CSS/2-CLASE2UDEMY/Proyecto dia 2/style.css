@@ -1,0 +1,66 @@
+.imgcentrada{
+    display: block; margin: 0 auto;
+}
+.imagen-circular{
+    width: 150px;  /* Ajusta el tamaño de la imagen */
+    height: 150px; /* Asegúrate de que el alto sea igual al ancho para que sea un círculo perfecto */
+    border-radius: 50%; /* Hace que la imagen se recorte en forma circular */
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del círculo sin distorsionarse */
+    border: 5px solid;
+}
+
+h1{
+    text-align: center;
+    font-family: fantasy;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado{
+    text-align: center;
+    margin: 0 20px;
+    }
+
+h2 {
+    margin: 0; /* Elimina el margen predeterminado del <h2> */
+}
+    
+p {
+    margin-top: 10px; /* Espacio entre el <h2> y el <p> */
+}
+#p2{
+    text-align: center;
+}
+body{
+   background-color: rgb(229, 229, 229);
+}
+
+a[href]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: rgb(130, 121, 105);
+}
+.spanclassp{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1:hover{
+    color: rgb(29, 32, 99);
+}
+p::first-letter{
+    color: rgb(29, 32, 99);
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.watches{
+    text-align: center;
+}
+h1+p{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+div h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

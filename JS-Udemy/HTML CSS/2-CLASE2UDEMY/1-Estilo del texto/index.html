@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Estilo de texto</title>
+    <style>
+        /*USAR UNA CLASE EN EL HEAD
+        - Reutilizable: Puedes aplicar la misma clase a varios elementos sin repetir código.
+        - Fácil de modificar: Si necesitas cambiar el estilo, solo lo haces en un lugar.
+        - Mejor mantenimiento: Si trabajas en un proyecto grande, 
+          es más fácil organizar todo el CSS en un solo archivo o en <head>.*/
+
+        /*/* 
+        margin: 20px;  
+        -> Agrega un margen externo de 20 píxeles alrededor del elemento, 
+        separándolo de otros elementos.
+
+        border: 3px;  
+        -> Define el grosor del borde en 3 píxeles,
+         pero necesita 'border-style' para mostrarse correctamente.
+
+         border-style: solid;  
+        -> Especifica que el borde será sólido (sin guiones ni puntos).
+
+         border-color: blue;  
+        -> Define el color del borde en azul
+
+        padding: 10px;  
+        -> Agrega un espacio interno de 10 píxeles dentro del elemento, 
+        separando el contenido del borde.
+        */
+        .segundo_texto{
+            margin: 20px;
+            border: 3px;
+            border-style:solid;
+            border-color: blue;
+            padding:20px ;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    color: Cambia el color del texto a azul oscuro.
+    background-color: Define un fondo beige claro.
+    font-family: Usa la fuente Verdana y otras alternativas.
+    font-size: Hace el texto 3 veces más grande de lo normal.
+    -->
+    <!--USAR EL STYLE DENTRO DE LA ETIQUETA
+    ->No es reutilizable: Si quieres aplicar el mismo estilo a varios elementos,
+    tienes que copiar y pegar el style="" en cada uno.
+    ->Dificulta el mantenimiento: Si necesitas cambiar el color o tamaño en todos los párrafos,
+    tienes que editarlos uno por uno.
+    ->Mezcla HTML y CSS: Se recomienda separar el diseño (CSS) de la estructura (HTML) 
+    para mejor organización.-->
+    <p style="color: rgb(15, 50, 75); 
+    background-color: rgb(237, 225, 207);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;">Este es mi texto</p>
+    <!--La clase que esta en el head-->
+    <p class="segundo_texto">Segundo texto</p>
+
+</body>

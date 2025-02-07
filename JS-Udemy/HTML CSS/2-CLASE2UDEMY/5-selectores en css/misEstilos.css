@@ -1,0 +1,52 @@
+body{
+    background-color: bisque;
+
+}
+
+/*selector por clase*/
+.principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*selector por id*/
+#informacion{
+    text-align: center;
+}
+
+
+
+
+/*sleccion por atributo, por ej, dar un tipo de formato solamente a los elemntos 
+que contengan el atributo href.
+-----------------------------------------------------------------------------------
+2 ejemplo, que solamente se le asigne ese valor a los sitios educativos: 
+discriminacion por el .edu
+------------------------------------------------------------------------------------
+
+a[href*=".edu"]
+
+"a"=lineas donde se encuntran los enlaces en el index
+"href"= enlaces directamente
+"*="= todo lo que sea igual a
+" ".edu" "= valor .edu(sitios educativos)
+ */
+
+a[href*=".edu"]{
+    background-color: gold;
+}
+
+/*selecciones de pseudoclases:
+asignar un formato a un elemento, dependiendo del estado en el que se encuentre
+--------------------------------------------------------------------------------
+hover:solamente se asigna el estilo mientras el mouse flote sobre ese elemento*/
+h1:hover{
+    color: red;
+}
+
+/*pseudoelemento: puedes asignarle un estilo en particular a una parte de un elemento,
+parecido a la etiqueta span  
+-------------------------------------------------------------------------------------
+"first-line"= se asigna la propiedad a la primera lineas de texto en la clase principal*/
+.principal::first-line{
+    background-color:lightgray;
+}

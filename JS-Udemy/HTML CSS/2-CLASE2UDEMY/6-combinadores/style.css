@@ -1,0 +1,48 @@
+/*COMBINADOR DECENDIENTE: 
+  queremos darle un estilo a todos los objetos p,
+  que se encuentren dentro de una etiqueta div*/
+div p{
+    color: green;
+}
+
+/*COMBINADOR DE HIJOS DIRECTOS:
+  si queremos que solamente se pinten los items que se encuentran
+   de la ol sin incluir los de la ul usamos: "ol>li{"
+   -------------------------------------------------------------
+   a diferencia de que si se usa: "ol li {" la propiedad se asigna para
+   todos los elementos li dentro de la order list incluyendo los de la 
+   unorder list*/
+ol>li{
+    font-weight: bolder;
+}
+
+/*HERMANOS ADYASENTES:
+  si quiero asignarle un estilo solamente a los subtitulos h3 que se 
+  encuntren directamente despues de un subtitulo h2: "h2+h3{" 
+  --------------------------------------------------------------------
+  si yo quisiera asignarselo a todos los hermanois generales,
+  aun que no esten directamente, pero si que esten despues de un h2,
+  usamos:"h2~h3{" */
+  h2+h3{
+    background-color: lightblue;
+  }
+
+  /*EJEMPLO
+    Digamos que le quiero asignar a los parrafos que tengan el atributo align=left 
+    un color de fondo dorado*
+    
+p[align="left"]{
+    background-color: gold;
+}
+
+    /*ahora solamente los que se encuentren dentro de una 
+    etiqueta div*
+
+div P[align="left"]{
+    background-color: gold;
+}
+/*ahora solamente que se pinten de dorado cuando el cursor flote sobre ellos*/
+
+div p[align="left"]:hover{
+    background-color: gold;
+}
