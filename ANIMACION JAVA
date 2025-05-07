@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animación con GSAP</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      background: #f39c12;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+
+  <!-- Cargar GSAP desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script>
+    gsap.to("#box1", {
+      duration: 2,
+      x: 300,
+      rotation: 360,
+      scale: 1.5,
+      backgroundColor: "#e74c3c",
+      repeat: -1,
+      yoyo: true
+    });
+
+    gsap.to("#box2", {
+      duration: 2,
+      y: 200,
+      borderRadius: "50%",
+      backgroundColor: "#2ecc71",
+      repeat: -1,
+      yoyo: true,
+      delay: 0.5
+    });
+
+    gsap.to("#box3", {
+      duration: 2,
+      x: -300,
+      y: -200,
+      scale: 0.5,
+      backgroundColor: "#3498db",
+      repeat: -1,
+      yoyo: true,
+      delay: 1
+    });
+  </script>
+
+</body>
+</html>
